@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var (
+		numero, soma, contador int
+	)
+
+	for {
+		fmt.Print("Digite um número inteiro (0 para sair): ")
+		fmt.Scanln(&numero)
+
+		if numero == 0 {
+			break
+		}
+
+		soma += numero
+		contador++
+	}
+
+	if contador > 0 {
+		media := float64(soma) / float64(contador)
+		fmt.Println("Média aritmética:", media)
+	} else {
+		fmt.Println("Nenhum número foi digitado.")
+	}
+}
