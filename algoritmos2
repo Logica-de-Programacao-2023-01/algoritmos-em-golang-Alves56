@@ -1,1 +1,18 @@
+package main
 
+import "fmt"
+
+func main() {
+    var numero int
+
+    fmt.Println("Digite um número inteiro:")
+    fmt.Scanln(&numero)
+
+    dobro := 2 * numero
+    triplo := 3 * numero
+    quadruplo := 4 * numero
+
+    fmt.Println("O dobro do número é:", dobro)
+    fmt.Println("O triplo do número é:", triplo)
+    fmt.Println("O quadruplo do número é:", quadruplo)
+}
